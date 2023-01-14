@@ -1,0 +1,347 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+                              build/ebus/ebus_f0.o (__gnu_thumb1_case_uqi)
+c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcmp.o)
+                              build/src/main.o (memcmp)
+c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy.o)
+                              build/src/main.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+device_serial       0x8               build/src/main.o
+heartbeat_count     0x4               build/src/system_stm32f0xx.o
+
+Discarded input sections
+
+ .text          0x00000000       0x14 build/src/startup_stm32f030.o
+ .data          0x00000000        0x0 build/src/startup_stm32f030.o
+ .bss           0x00000000        0x0 build/src/startup_stm32f030.o
+ .text          0x00000000        0x0 build/src/main.o
+ .data          0x00000000        0x0 build/src/main.o
+ .bss           0x00000000        0x0 build/src/main.o
+ .text          0x00000000        0x0 build/src/system_stm32f0xx.o
+ .data          0x00000000        0x0 build/src/system_stm32f0xx.o
+ .bss           0x00000000        0x0 build/src/system_stm32f0xx.o
+ .text.system_reset
+                0x00000000       0x1c build/src/system_stm32f0xx.o
+ .text.tooglePIN_G
+                0x00000000       0x10 build/src/system_stm32f0xx.o
+ .text          0x00000000        0x0 build/ebus/ebus_f0.o
+ .data          0x00000000        0x0 build/ebus/ebus_f0.o
+ .bss           0x00000000        0x0 build/ebus/ebus_f0.o
+ .text.ebus_down
+                0x00000000       0x18 build/ebus/ebus_f0.o
+ .text.ebus_get_last_tx_status
+                0x00000000        0xc build/ebus/ebus_f0.o
+ .text          0x00000000        0x0 build/ebus/ebus_utils.o
+ .data          0x00000000        0x0 build/ebus/ebus_utils.o
+ .bss           0x00000000        0x0 build/ebus/ebus_utils.o
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcmp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x08000000         0x00004000         xr
+RAM              0x20000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000      0xbf8
+ *(.isr_vector)
+ .isr_vector    0x08000000       0xc0 build/src/startup_stm32f030.o
+                0x08000000                g_pfnVectors
+ *(.text*)
+ .text.Reset_Handler
+                0x080000c0       0x4c build/src/startup_stm32f030.o
+                0x080000c0                Reset_Handler
+ .text.Default_Handler
+                0x0800010c        0x2 build/src/startup_stm32f030.o
+                0x0800010c                TIM1_CC_IRQHandler
+                0x0800010c                TSC_IRQHandler
+                0x0800010c                ADC1_COMP_IRQHandler
+                0x0800010c                PendSV_Handler
+                0x0800010c                NMI_Handler
+                0x0800010c                I2C1_IRQHandler
+                0x0800010c                RCC_CRS_IRQHandler
+                0x0800010c                SPI1_IRQHandler
+                0x0800010c                TIM6_DAC_IRQHandler
+                0x0800010c                USART3_4_IRQHandler
+                0x0800010c                EXTI2_3_IRQHandler
+                0x0800010c                I2C2_IRQHandler
+                0x0800010c                CEC_CAN_IRQHandler
+                0x0800010c                RTC_IRQHandler
+                0x0800010c                PVD_VDDIO2_IRQHandler
+                0x0800010c                DMA1_Channel4_5_6_7_IRQHandler
+                0x0800010c                TIM16_IRQHandler
+                0x0800010c                DMA1_Channel1_IRQHandler
+                0x0800010c                Default_Handler
+                0x0800010c                TIM14_IRQHandler
+                0x0800010c                TIM7_IRQHandler
+                0x0800010c                TIM15_IRQHandler
+                0x0800010c                EXTI0_1_IRQHandler
+                0x0800010c                USB_IRQHandler
+                0x0800010c                SPI2_IRQHandler
+                0x0800010c                SVC_Handler
+                0x0800010c                WWDG_IRQHandler
+                0x0800010c                TIM2_IRQHandler
+                0x0800010c                DMA1_Channel2_3_IRQHandler
+                0x0800010c                USART2_IRQHandler
+                0x0800010c                FLASH_IRQHandler
+                0x0800010c                USART1_IRQHandler
+                0x0800010c                TIM1_BRK_UP_TRG_COM_IRQHandler
+ .text.bus_pkt_rcvd
+                0x0800010e        0x8 build/src/main.o
+                0x0800010e                bus_pkt_rcvd
+ *fill*         0x08000116        0x2 
+ .text.process_req.isra.0
+                0x08000118       0x94 build/src/main.o
+ .text.startup.main
+                0x080001ac      0x154 build/src/main.o
+                0x080001ac                main
+ .text.SysTick_Handler
+                0x08000300       0x14 build/src/system_stm32f0xx.o
+                0x08000300                SysTick_Handler
+ .text.SystemInit
+                0x08000314      0x138 build/src/system_stm32f0xx.o
+                0x08000314                SystemInit
+ .text.delay_us
+                0x0800044c       0x1a build/src/system_stm32f0xx.o
+                0x0800044c                delay_us
+ *fill*         0x08000466        0x2 
+ .text.HardFault_Handler
+                0x08000468       0x20 build/src/system_stm32f0xx.o
+                0x08000468                HardFault_Handler
+ .text.delay_ms
+                0x08000488        0xe build/src/system_stm32f0xx.o
+                0x08000488                delay_ms
+ .text.ebus_led_on
+                0x08000496        0xc build/src/system_stm32f0xx.o
+                0x08000496                ebus_led_on
+ .text.ebus_led_off
+                0x080004a2        0xc build/src/system_stm32f0xx.o
+                0x080004a2                ebus_led_off
+ .text.led_g_on
+                0x080004ae        0xc build/src/system_stm32f0xx.o
+                0x080004ae                led_g_on
+ .text.led_g_off
+                0x080004ba        0xc build/src/system_stm32f0xx.o
+                0x080004ba                led_g_off
+ .text.alarm_on
+                0x080004c6        0xa build/src/system_stm32f0xx.o
+                0x080004c6                alarm_on
+ .text.alarm_off
+                0x080004d0        0xa build/src/system_stm32f0xx.o
+                0x080004d0                alarm_off
+ *fill*         0x080004da        0x2 
+ .text.ebus_uid
+                0x080004dc       0x58 build/src/system_stm32f0xx.o
+                0x080004dc                ebus_uid
+ .text.device_state
+                0x08000534        0x4 build/src/system_stm32f0xx.o
+                0x08000534                device_state
+ .text.EXTI4_15_IRQHandler
+                0x08000538      0x13c build/ebus/ebus_f0.o
+                0x08000538                EXTI4_15_IRQHandler
+ .text.TIM17_IRQHandler
+                0x08000674       0xcc build/ebus/ebus_f0.o
+                0x08000674                TIM17_IRQHandler
+ .text.ebus_transmit
+                0x08000740      0x154 build/ebus/ebus_f0.o
+                0x08000740                ebus_transmit
+ .text.TIM3_IRQHandler
+                0x08000894       0x64 build/ebus/ebus_f0.o
+                0x08000894                TIM3_IRQHandler
+ .text.ebus_init
+                0x080008f8       0xfc build/ebus/ebus_f0.o
+                0x080008f8                ebus_init
+ .text.ebus_up  0x080009f4       0x18 build/ebus/ebus_f0.o
+                0x080009f4                ebus_up
+ .text.ebus_get_line_status
+                0x08000a0c       0x18 build/ebus/ebus_f0.o
+                0x08000a0c                ebus_get_line_status
+ .text.ebus_rxfifo_init
+                0x08000a24       0x14 build/ebus/ebus_utils.o
+                0x08000a24                ebus_rxfifo_init
+ .text.ebus_txfifo_init
+                0x08000a38       0x14 build/ebus/ebus_utils.o
+                0x08000a38                ebus_txfifo_init
+ .text.ebus_rxfifo_push
+                0x08000a4c       0x58 build/ebus/ebus_utils.o
+                0x08000a4c                ebus_rxfifo_push
+ .text.ebus_txfifo_push
+                0x08000aa4       0x58 build/ebus/ebus_utils.o
+                0x08000aa4                ebus_txfifo_push
+ .text.ebus_rxfifo_packet
+                0x08000afc       0x24 build/ebus/ebus_utils.o
+                0x08000afc                ebus_rxfifo_packet
+ .text.ebus_txfifo_packet
+                0x08000b20       0x24 build/ebus/ebus_utils.o
+                0x08000b20                ebus_txfifo_packet
+ .text.ebus_rxfifo_next
+                0x08000b44       0x34 build/ebus/ebus_utils.o
+                0x08000b44                ebus_rxfifo_next
+ .text.ebus_txfifo_next
+                0x08000b78       0x34 build/ebus/ebus_utils.o
+                0x08000b78                ebus_txfifo_next
+ .text          0x08000bac       0x14 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+                0x08000bac                __gnu_thumb1_case_uqi
+ .text.memcmp   0x08000bc0       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcmp.o)
+                0x08000bc0                memcmp
+ .text.memcpy   0x08000bde       0x12 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy.o)
+                0x08000bde                memcpy
+ *(.rodata*)
+ .rodata.CSWTCH.43
+                0x08000bf0        0x6 build/ebus/ebus_f0.o
+                0x08000bf8                . = ALIGN (0x4)
+ *fill*         0x08000bf6        0x2 
+                0x08000bf8                __etext = .
+
+.glue_7         0x08000bf8        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x08000bf8        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x08000bf8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08000bf8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08000bf8        0x0
+ .iplt          0x00000000        0x0 build/src/startup_stm32f030.o
+
+.rel.dyn        0x08000bf8        0x0
+ .rel.iplt      0x00000000        0x0 build/src/startup_stm32f030.o
+
+.data           0x20000000        0x8 load address 0x08000bf8
+                0x20000000                __data_start__ = .
+ *(.ramfunc)
+ *(.data*)
+ .data.req_life
+                0x20000000        0x4 build/src/main.o
+                0x20000000                req_life
+ .data.device_address
+                0x20000004        0x2 build/src/main.o
+                0x20000004                device_address
+                0x20000008                . = ALIGN (0x4)
+ *fill*         0x20000006        0x2 
+                0x20000008                __data_end__ = .
+
+.igot.plt       0x20000008        0x0 load address 0x08000c00
+ .igot.plt      0x00000000        0x0 build/src/startup_stm32f030.o
+
+.bss            0x20000008      0x1c0 load address 0x08000c00
+                0x20000008                __bss_start__ = .
+ *(.bss*)
+ .bss.state     0x20000008        0x1 build/src/main.o
+                0x20000008                state
+ *fill*         0x20000009        0x3 
+ .bss.rxd_buf   0x2000000c       0x20 build/ebus/ebus_f0.o
+ .bss.rx_goodpkt
+                0x2000002c        0x4 build/ebus/ebus_f0.o
+ .bss.line_status
+                0x20000030        0x1 build/ebus/ebus_f0.o
+ *fill*         0x20000031        0x3 
+ .bss.rx_badpkt
+                0x20000034        0x4 build/ebus/ebus_f0.o
+ .bss.last_tx_status
+                0x20000038        0x1 build/ebus/ebus_f0.o
+ *fill*         0x20000039        0x3 
+ .bss.tx_bitcount
+                0x2000003c        0x4 build/ebus/ebus_f0.o
+ .bss.rx_priority
+                0x20000040        0x1 build/ebus/ebus_f0.o
+ *fill*         0x20000041        0x3 
+ .bss.rx_bitcount
+                0x20000044        0x4 build/ebus/ebus_f0.o
+ .bss.txd_buf   0x20000048       0x20 build/ebus/ebus_f0.o
+ .bss.tx_priority
+                0x20000068        0x1 build/ebus/ebus_f0.o
+ .bss.rx_crc4   0x20000069        0x1 build/ebus/ebus_f0.o
+ *fill*         0x2000006a        0x2 
+ .bss.tx_pktsize
+                0x2000006c        0x4 build/ebus/ebus_f0.o
+ .bss.rx_crc8   0x20000070        0x1 build/ebus/ebus_f0.o
+ *fill*         0x20000071        0x3 
+ .bss.rx_fifo   0x20000074       0xcc build/ebus/ebus_utils.o
+ .bss.tx_fifo   0x20000140       0x7c build/ebus/ebus_utils.o
+ *(COMMON)
+ COMMON         0x200001bc        0x8 build/src/main.o
+                0x200001bc                device_serial
+ COMMON         0x200001c4        0x4 build/src/system_stm32f0xx.o
+                0x200001c4                heartbeat_count
+                0x200001c8                . = ALIGN (0x4)
+                0x200001c8                __bss_end__ = .
+
+.heap           0x200001c8        0x0
+                0x200001c8                __end__ = .
+ *(.heap*)
+                0x200001c8                __HeapLimit = .
+
+.stack_dummy    0x200001c8        0x0
+ *(.stack)
+                0x20001000                __StackTop = (ORIGIN (RAM) + 0x1000)
+                0x20001000                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x20001000                PROVIDE (__stack, __StackTop)
+                0x20001000                PROVIDE (_estack, __stack)
+                0x08000bf8                PROVIDE (_sidata, __etext)
+                0x20000000                PROVIDE (_sdata, __data_start__)
+                0x20000008                PROVIDE (_edata, __data_end__)
+                0x20000008                PROVIDE (_sbss, __bss_start__)
+                0x200001c8                PROVIDE (_ebss, __bss_end__)
+LOAD build/src/startup_stm32f030.o
+LOAD build/src/main.o
+LOAD build/src/system_stm32f0xx.o
+LOAD build/ebus/ebus_f0.o
+LOAD build/ebus/ebus_utils.o
+START GROUP
+LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+OUTPUT(Siren.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x21 build/src/startup_stm32f030.o
+ .ARM.attributes
+                0x00000021       0x31 build/src/main.o
+ .ARM.attributes
+                0x00000052       0x31 build/src/system_stm32f0xx.o
+ .ARM.attributes
+                0x00000083       0x31 build/ebus/ebus_f0.o
+ .ARM.attributes
+                0x000000b4       0x31 build/ebus/ebus_utils.o
+ .ARM.attributes
+                0x000000e5       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x00000103       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x0000012f       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 build/src/main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 build/src/system_stm32f0xx.o
+ .comment       0x00000000       0x71 build/ebus/ebus_f0.o
+ .comment       0x00000000       0x71 build/ebus/ebus_utils.o
+
+.debug_frame    0x00000000       0x54
+ .debug_frame   0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcmp.o)
+ .debug_frame   0x0000002c       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy.o)
